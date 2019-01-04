@@ -4,6 +4,7 @@ import AddTicket from './add-ticket';
 
 
 
+
 class App extends Component {
   render() {
     return (
@@ -16,7 +17,7 @@ class App extends Component {
                 <ViewTicket/>
             </div>
             <div class="col-md-4">
-              <AddTicket/>
+              <AddTicket/><br/>
             </div>
 
         </div>  {/* class row */}
