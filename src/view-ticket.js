@@ -19,7 +19,7 @@ class ViewTicket extends React.Component{
         const id=(event.target.id)
         if(event.target.checked===true){
             console.log("checked")
-            axios.put(`http://dct-api-data.herokuapp.com/tickets/${id}?api_key=befe313c9c822bc2`,{status:"close"})
+            axios.put(`https://dct-api-data.herokuapp.com/tickets/${id}?api_key=befe313c9c822bc2`,{status:"close"})
             .then((response)=>{
                 console.log(response.data);
 
@@ -27,7 +27,7 @@ class ViewTicket extends React.Component{
 
         }else{
             console.log("unchecked")
-            axios.put(`http://dct-api-data.herokuapp.com/tickets/${id}?api_key=befe313c9c822bc2`,{status:"open"})
+            axios.put(`https://dct-api-data.herokuapp.com/tickets/${id}?api_key=befe313c9c822bc2`,{status:"open"})
             .then((response)=>{
                 console.log(response.data);
 
@@ -67,7 +67,7 @@ class ViewTicket extends React.Component{
 
 
     componentDidMount(){
-        axios.get('http://dct-api-data.herokuapp.com/tickets?api_key=befe313c9c822bc2')
+        axios.get('https://dct-api-data.herokuapp.com/tickets?api_key=befe313c9c822bc2')
         .then((response)=>{
             this.setState({
                 users:response.data,

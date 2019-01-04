@@ -34,7 +34,7 @@ class AddTicket extends React.Component{
             message:this.state.Message,
             status:this.state.status
         }
-        Axios.post('http://dct-api-data.herokuapp.com/tickets?api_key=befe313c9c822bc2',data).then(response=>{
+        Axios.post('https://dct-api-data.herokuapp.com/tickets?api_key=befe313c9c822bc2',data).then(response=>{
             console.log(response.data)
         })
 
