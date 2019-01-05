@@ -53,7 +53,7 @@ class AddTicket extends React.Component{
 
     render(){
         return(<div>
-            <form style={{"border":"3px solid gray","padding":"10px 10px"}} onSubmit={this.handleSubmit}>
+            <form style={{"border":"3px solid gray","padding":"10px 10px","background":"white"}} onSubmit={this.handleSubmit}>
                 <fieldset >
                     <legend><h3>Add Ticket</h3></legend>
                     <div class="row">

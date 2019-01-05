@@ -117,7 +117,7 @@ class ViewTicket extends React.Component{
                     </tr>
 
                 </thead>
-                <tbody>
+                <tbody style={{"background":"white"}}>
                     {this.state.filteredTickets.map((user)=>{
                         return(
                             <tr key={user.id}> 
